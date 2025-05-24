@@ -54,7 +54,25 @@ button {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
+.operator {
+  background-color:lightblue;
+  color: white;
+}
+.operator:hover{
+  background-color: rgb(43, 43, 92)
+}
+#answer {
+  background-color: lightgreen;
+  color: white;
+}
+#clear {
+  background-color: lightcoral;
+  color: white;
+}
+#backspace {
+  background-color: lightyellow;
+  color: black;
+}
 button:hover {
   background-color: #d0d0d0;
 }
