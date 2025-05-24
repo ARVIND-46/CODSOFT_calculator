@@ -145,7 +145,14 @@ body.dark button {
   background-color: #333;
   color: #fff;
 }
+body.dark .operator {
+  background-color: #4682b4; 
+  color: white;
+}
 
+body.dark .operator:hover {
+  background-color: #5a9bd4;  
+}
 body.dark button:hover {
   background-color: #444;
 }
