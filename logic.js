@@ -14,7 +14,7 @@ clearButton.addEventListener('click', () => {
 
 // Backspace
 backspaceButton.addEventListener('click', () => {
-  if (currentInput === 'Error') {
+  if (currentInput === 'Error' || currentInput === 'Infinity') {
     currentInput = '';
   } else {
     currentInput = currentInput.slice(0, -1);
@@ -76,3 +76,18 @@ document.addEventListener('keydown', (event) => {
 
   display.value = currentInput;
 });
+
+// toogle dark mode
+const themeToggle = document.getElementById('toggleTheme');
+
+// Set default theme
+document.body.classList.add('light');
+
+themeToggle.addEventListener('change', () => {
+  if (themeToggle.checked) {
+    document.body.classList.replace('light', 'dark');
+  } else {
+    document.body.classList.replace('dark', 'light');
+  }
+});
+
